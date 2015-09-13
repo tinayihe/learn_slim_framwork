@@ -1,9 +1,46 @@
 <DOCTYPE html>
-<html lanf="en">
+<html lang="en">
 <head>
-	<meta charset="utd-8">
+	<meta charset="utf-8">
 	<title>Slim Frond-end Demo using Skeleton and Zepto.js</title>
 	<meta name="description" content="Learn Framework Slim with the tutorial of Codoki">
 	<meta name="author" content="Yihe">
 	<meta name="viewport" content="widtj=device-width, initial-scale=1.0">
-	
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+  	<link rel="stylesheet" href="css/skeleton.css">
+  	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row main">
+			
+			<!-- sidebar -->
+			<div class="three columns">
+				<b>Garage</b>
+				<ul id="car-list"></ul>
+			</div>
+
+			<!-- main contain -->
+			<div class="nine columns">
+				<a class="button button-primary" href="#" id="btnAdd">New Car</a>	
+				<form id="carForm">
+					<div class="detail-view">
+						<input type="hidden" id="id">
+						<label for="year">Year</label>
+						<input class="u-full-width" type="text" id="year">
+						<label for="make">Make</label>
+	          			<input class="u-full-width" type="text" id="make">
+	          			<label for="model">Model</label>
+	          			<input class="u-full-width" type="text" id="model">
+	          			<a class="button" href="#" id="btnSave">Save</a>
+	          			<a class="button" href="#" id="btnDelete">Delete</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
