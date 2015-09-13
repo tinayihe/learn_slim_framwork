@@ -27,7 +27,7 @@ $app->get('/cars', function() use($app){
 });
 
 //get cars
-$app->get('/cars/:make', function($make) use($app){
+$app->get('/makes/:make', function($make) use($app){
   $app->response->headers->set("Content-Type","application/json");
   echo resCars($app->db->cars()->where('make', $make));
 });
